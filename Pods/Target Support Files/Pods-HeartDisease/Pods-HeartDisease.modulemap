@@ -1,0 +1,6 @@
+framework module Pods_HeartDisease {
+  umbrella header "Pods-HeartDisease-umbrella.h"
+
+  export *
+  module * { export * }
+}

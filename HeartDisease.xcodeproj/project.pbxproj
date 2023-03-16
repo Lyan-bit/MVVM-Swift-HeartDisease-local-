@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020D0279291AE31100E9950A /* HeartDiseaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0278291AE31100E9950A /* HeartDiseaseApp.swift */; };
+		020D027D291AE31300E9950A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020D027C291AE31300E9950A /* Assets.xcassets */; };
+		020D0280291AE31300E9950A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020D027F291AE31300E9950A /* Preview Assets.xcassets */; };
+		020D029E291AE37E00E9950A /* OclType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D028A291AE37E00E9950A /* OclType.swift */; };
+		020D029F291AE37E00E9950A /* FileAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D028B291AE37E00E9950A /* FileAccessor.swift */; };
+		020D02A0291AE37E00E9950A /* Ocl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D028C291AE37E00E9950A /* Ocl.swift */; };
+		020D02A1291AE37E00E9950A /* OclFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D028D291AE37E00E9950A /* OclFile.swift */; };
+		020D02A2291AE37E00E9950A /* ModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D028F291AE37E00E9950A /* ModelParser.swift */; };
+		020D02A7291AE37E00E9950A /* ClassificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0295291AE37E00E9950A /* ClassificationViewModel.swift */; };
+		020D02AC291AE37E00E9950A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D029B291AE37E00E9950A /* MainView.swift */; };
+		020D02AF291AF07E00E9950A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 020D02AE291AF07E00E9950A /* GoogleService-Info.plist */; };
+		020D02B0291AF77200E9950A /* Heart_model_13F.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 020D02AD291AE3E100E9950A /* Heart_model_13F.tflite */; };
+		0242564F29B6828B00ADE84B /* HeartDiseaseVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242564929B6828B00ADE84B /* HeartDiseaseVO.swift */; };
+		0242565129B6828B00ADE84B /* HeartDisease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242564B29B6828B00ADE84B /* HeartDisease.swift */; };
+		0242565329B6828B00ADE84B /* HeartDiseaseBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242564D29B6828B00ADE84B /* HeartDiseaseBean.swift */; };
+		0242566729B6836B00ADE84B /* DeleteHeartDiseaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242566029B6836B00ADE84B /* DeleteHeartDiseaseScreen.swift */; };
+		0242566829B6836B00ADE84B /* CreateHeartDiseaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242566129B6836B00ADE84B /* CreateHeartDiseaseScreen.swift */; };
+		0242566929B6836B00ADE84B /* ClassifyHeartDiseaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242566229B6836B00ADE84B /* ClassifyHeartDiseaseScreen.swift */; };
+		0242566A29B6836B00ADE84B /* ListHeartDiseaseRowScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242566329B6836B00ADE84B /* ListHeartDiseaseRowScreen.swift */; };
+		0242566B29B6836B00ADE84B /* EditHeartDiseaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242566429B6836B00ADE84B /* EditHeartDiseaseScreen.swift */; };
+		0242566C29B6836B00ADE84B /* SearchHeartDiseaseByAgeageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242566529B6836B00ADE84B /* SearchHeartDiseaseByAgeageScreen.swift */; };
+		0242566D29B6836B00ADE84B /* ListHeartDiseaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242566629B6836B00ADE84B /* ListHeartDiseaseScreen.swift */; };
+		02E7A40929B6656E00F0A945 /* HeartDiseaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A40829B6656E00F0A945 /* HeartDiseaseViewModel.swift */; };
+		02E7A40B29B674D500F0A945 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E7A40A29B674D500F0A945 /* DB.swift */; };
+		8F050254E239C69D141D450A /* Pods_HeartDisease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10BA90788B7DF28B8060D4B /* Pods_HeartDisease.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		020D0275291AE31100E9950A /* HeartDisease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartDisease.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		020D0278291AE31100E9950A /* HeartDiseaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartDiseaseApp.swift; sourceTree = "<group>"; };
+		020D027C291AE31300E9950A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		020D027F291AE31300E9950A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		020D028A291AE37E00E9950A /* OclType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OclType.swift; sourceTree = "<group>"; };
+		020D028B291AE37E00E9950A /* FileAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileAccessor.swift; sourceTree = "<group>"; };
+		020D028C291AE37E00E9950A /* Ocl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ocl.swift; sourceTree = "<group>"; };
+		020D028D291AE37E00E9950A /* OclFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OclFile.swift; sourceTree = "<group>"; };
+		020D028F291AE37E00E9950A /* ModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelParser.swift; sourceTree = "<group>"; };
+		020D0295291AE37E00E9950A /* ClassificationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationViewModel.swift; sourceTree = "<group>"; };
+		020D029B291AE37E00E9950A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		020D02AD291AE3E100E9950A /* Heart_model_13F.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Heart_model_13F.tflite; sourceTree = "<group>"; };
+		020D02AE291AF07E00E9950A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0242564929B6828B00ADE84B /* HeartDiseaseVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartDiseaseVO.swift; sourceTree = "<group>"; };
+		0242564B29B6828B00ADE84B /* HeartDisease.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartDisease.swift; sourceTree = "<group>"; };
+		0242564D29B6828B00ADE84B /* HeartDiseaseBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartDiseaseBean.swift; sourceTree = "<group>"; };
+		0242566029B6836B00ADE84B /* DeleteHeartDiseaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteHeartDiseaseScreen.swift; sourceTree = "<group>"; };
+		0242566129B6836B00ADE84B /* CreateHeartDiseaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHeartDiseaseScreen.swift; sourceTree = "<group>"; };
+		0242566229B6836B00ADE84B /* ClassifyHeartDiseaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyHeartDiseaseScreen.swift; sourceTree = "<group>"; };
+		0242566329B6836B00ADE84B /* ListHeartDiseaseRowScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHeartDiseaseRowScreen.swift; sourceTree = "<group>"; };
+		0242566429B6836B00ADE84B /* EditHeartDiseaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditHeartDiseaseScreen.swift; sourceTree = "<group>"; };
+		0242566529B6836B00ADE84B /* SearchHeartDiseaseByAgeageScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHeartDiseaseByAgeageScreen.swift; sourceTree = "<group>"; };
+		0242566629B6836B00ADE84B /* ListHeartDiseaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHeartDiseaseScreen.swift; sourceTree = "<group>"; };
+		02E7A40829B6656E00F0A945 /* HeartDiseaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartDiseaseViewModel.swift; sourceTree = "<group>"; };
+		02E7A40A29B674D500F0A945 /* DB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		5BD1C91B09332ED19EE7B3CF /* Pods-HeartDisease.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartDisease.release.xcconfig"; path = "Target Support Files/Pods-HeartDisease/Pods-HeartDisease.release.xcconfig"; sourceTree = "<group>"; };
+		805C72CAB135D13E357F99D7 /* Pods-HeartDisease.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartDisease.debug.xcconfig"; path = "Target Support Files/Pods-HeartDisease/Pods-HeartDisease.debug.xcconfig"; sourceTree = "<group>"; };
+		F10BA90788B7DF28B8060D4B /* Pods_HeartDisease.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartDisease.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		020D0272291AE31100E9950A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F050254E239C69D141D450A /* Pods_HeartDisease.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		020D026C291AE31100E9950A = {
+			isa = PBXGroup;
+			children = (
+				020D0277291AE31100E9950A /* HeartDisease */,
+				020D0276291AE31100E9950A /* Products */,
+				34302241BA66DB8512DD5C31 /* Pods */,
+				F55A5957BD31819ABDC2A88C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		020D0276291AE31100E9950A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				020D0275291AE31100E9950A /* HeartDisease.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		020D0277291AE31100E9950A /* HeartDisease */ = {
+			isa = PBXGroup;
+			children = (
+				020D0278291AE31100E9950A /* HeartDiseaseApp.swift */,
+				02E7A40729B664E200F0A945 /* ModelView */,
+				020D0286291AE37E00E9950A /* cloDatabase */,
+				020D0289291AE37E00E9950A /* helper */,
+				020D028E291AE37E00E9950A /* ML Model */,
+				020D0291291AE37E00E9950A /* model */,
+				020D0296291AE37E00E9950A /* views */,
+				020D027C291AE31300E9950A /* Assets.xcassets */,
+				020D02AE291AF07E00E9950A /* GoogleService-Info.plist */,
+				020D027E291AE31300E9950A /* Preview Content */,
+			);
+			path = HeartDisease;
+			sourceTree = "<group>";
+		};
+		020D027E291AE31300E9950A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				020D027F291AE31300E9950A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		020D0286291AE37E00E9950A /* cloDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				02E7A40A29B674D500F0A945 /* DB.swift */,
+			);
+			path = cloDatabase;
+			sourceTree = "<group>";
+		};
+		020D0289291AE37E00E9950A /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				020D028A291AE37E00E9950A /* OclType.swift */,
+				020D028B291AE37E00E9950A /* FileAccessor.swift */,
+				020D028C291AE37E00E9950A /* Ocl.swift */,
+				020D028D291AE37E00E9950A /* OclFile.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		020D028E291AE37E00E9950A /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				020D028F291AE37E00E9950A /* ModelParser.swift */,
+				020D02AD291AE3E100E9950A /* Heart_model_13F.tflite */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		020D0291291AE37E00E9950A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0242564B29B6828B00ADE84B /* HeartDisease.swift */,
+				0242564D29B6828B00ADE84B /* HeartDiseaseBean.swift */,
+				0242564929B6828B00ADE84B /* HeartDiseaseVO.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		020D0296291AE37E00E9950A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0242566229B6836B00ADE84B /* ClassifyHeartDiseaseScreen.swift */,
+				0242566129B6836B00ADE84B /* CreateHeartDiseaseScreen.swift */,
+				0242566029B6836B00ADE84B /* DeleteHeartDiseaseScreen.swift */,
+				0242566429B6836B00ADE84B /* EditHeartDiseaseScreen.swift */,
+				0242566329B6836B00ADE84B /* ListHeartDiseaseRowScreen.swift */,
+				0242566629B6836B00ADE84B /* ListHeartDiseaseScreen.swift */,
+				0242566529B6836B00ADE84B /* SearchHeartDiseaseByAgeageScreen.swift */,
+				020D029B291AE37E00E9950A /* MainView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		02E7A40729B664E200F0A945 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				020D0295291AE37E00E9950A /* ClassificationViewModel.swift */,
+				02E7A40829B6656E00F0A945 /* HeartDiseaseViewModel.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		34302241BA66DB8512DD5C31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				805C72CAB135D13E357F99D7 /* Pods-HeartDisease.debug.xcconfig */,
+				5BD1C91B09332ED19EE7B3CF /* Pods-HeartDisease.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F55A5957BD31819ABDC2A88C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F10BA90788B7DF28B8060D4B /* Pods_HeartDisease.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		020D0274291AE31100E9950A /* HeartDisease */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 020D0283291AE31300E9950A /* Build configuration list for PBXNativeTarget "HeartDisease" */;
+			buildPhases = (
+				B3EC924D1D5E38440F619C8F /* [CP] Check Pods Manifest.lock */,
+				020D0271291AE31100E9950A /* Sources */,
+				020D0272291AE31100E9950A /* Frameworks */,
+				020D0273291AE31100E9950A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeartDisease;
+			productName = HeartDisease;
+			productReference = 020D0275291AE31100E9950A /* HeartDisease.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		020D026D291AE31100E9950A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					020D0274291AE31100E9950A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 020D0270291AE31100E9950A /* Build configuration list for PBXProject "HeartDisease" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 020D026C291AE31100E9950A;
+			productRefGroup = 020D0276291AE31100E9950A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				020D0274291AE31100E9950A /* HeartDisease */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		020D0273291AE31100E9950A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020D02B0291AF77200E9950A /* Heart_model_13F.tflite in Resources */,
+				020D0280291AE31300E9950A /* Preview Assets.xcassets in Resources */,
+				020D027D291AE31300E9950A /* Assets.xcassets in Resources */,
+				020D02AF291AF07E00E9950A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3EC924D1D5E38440F619C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeartDisease-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		020D0271291AE31100E9950A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020D02A2291AE37E00E9950A /* ModelParser.swift in Sources */,
+				020D02AC291AE37E00E9950A /* MainView.swift in Sources */,
+				0242565329B6828B00ADE84B /* HeartDiseaseBean.swift in Sources */,
+				020D02A7291AE37E00E9950A /* ClassificationViewModel.swift in Sources */,
+				0242566729B6836B00ADE84B /* DeleteHeartDiseaseScreen.swift in Sources */,
+				0242566D29B6836B00ADE84B /* ListHeartDiseaseScreen.swift in Sources */,
+				020D029E291AE37E00E9950A /* OclType.swift in Sources */,
+				0242566C29B6836B00ADE84B /* SearchHeartDiseaseByAgeageScreen.swift in Sources */,
+				0242566929B6836B00ADE84B /* ClassifyHeartDiseaseScreen.swift in Sources */,
+				0242565129B6828B00ADE84B /* HeartDisease.swift in Sources */,
+				020D0279291AE31100E9950A /* HeartDiseaseApp.swift in Sources */,
+				020D02A0291AE37E00E9950A /* Ocl.swift in Sources */,
+				0242566829B6836B00ADE84B /* CreateHeartDiseaseScreen.swift in Sources */,
+				020D029F291AE37E00E9950A /* FileAccessor.swift in Sources */,
+				020D02A1291AE37E00E9950A /* OclFile.swift in Sources */,
+				02E7A40929B6656E00F0A945 /* HeartDiseaseViewModel.swift in Sources */,
+				0242566A29B6836B00ADE84B /* ListHeartDiseaseRowScreen.swift in Sources */,
+				0242564F29B6828B00ADE84B /* HeartDiseaseVO.swift in Sources */,
+				02E7A40B29B674D500F0A945 /* DB.swift in Sources */,
+				0242566B29B6836B00ADE84B /* EditHeartDiseaseScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		020D0281291AE31300E9950A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		020D0282291AE31300E9950A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		020D0284291AE31300E9950A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805C72CAB135D13E357F99D7 /* Pods-HeartDisease.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartDisease/Preview Content\"";
+				DEVELOPMENT_TEAM = NR2XNW22UL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyanalwakeel.heartDisease;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		020D0285291AE31300E9950A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD1C91B09332ED19EE7B3CF /* Pods-HeartDisease.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartDisease/Preview Content\"";
+				DEVELOPMENT_TEAM = NR2XNW22UL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyanalwakeel.heartDisease;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		020D0270291AE31100E9950A /* Build configuration list for PBXProject "HeartDisease" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020D0281291AE31300E9950A /* Debug */,
+				020D0282291AE31300E9950A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020D0283291AE31300E9950A /* Build configuration list for PBXNativeTarget "HeartDisease" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020D0284291AE31300E9950A /* Debug */,
+				020D0285291AE31300E9950A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 020D026D291AE31100E9950A /* Project object */;
+}
