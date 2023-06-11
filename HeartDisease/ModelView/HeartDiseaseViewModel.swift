@@ -12,100 +12,6 @@ import SwiftUI
 import CoreLocation
 
 
-/* This code requires OclFile.swift */
-
-func initialiseOclFile()
-{
-//let systemIn = createByPKOclFile(key: "System.in")
-//let systemOut = createByPKOclFile(key: "System.out")
-//let systemErr = createByPKOclFile(key: "System.err")
-}
-
-/* This metatype code requires OclType.swift */
-
-func initialiseOclType()
-{ let intOclType = createByPKOclType(key: "int")
-intOclType.actualMetatype = Int.self
-let doubleOclType = createByPKOclType(key: "double")
-doubleOclType.actualMetatype = Double.self
-let longOclType = createByPKOclType(key: "long")
-longOclType.actualMetatype = Int64.self
-let stringOclType = createByPKOclType(key: "String")
-stringOclType.actualMetatype = String.self
-let sequenceOclType = createByPKOclType(key: "Sequence")
-sequenceOclType.actualMetatype = type(of: [])
-let anyset : Set<AnyHashable> = Set<AnyHashable>()
-let setOclType = createByPKOclType(key: "Set")
-setOclType.actualMetatype = type(of: anyset)
-let mapOclType = createByPKOclType(key: "Map")
-mapOclType.actualMetatype = type(of: [:])
-let voidOclType = createByPKOclType(key: "void")
-voidOclType.actualMetatype = Void.self
-
-let heartDiseaseOclType = createByPKOclType(key: "HeartDisease")
-heartDiseaseOclType.actualMetatype = HeartDisease.self
-
-let heartDiseaseId = createOclAttribute()
-heartDiseaseId.name = "id"
-heartDiseaseId.type = stringOclType
-heartDiseaseOclType.attributes.append(heartDiseaseId)
-let heartDiseaseAge = createOclAttribute()
-heartDiseaseAge.name = "age"
-heartDiseaseAge.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseAge)
-let heartDiseaseSex = createOclAttribute()
-heartDiseaseSex.name = "sex"
-heartDiseaseSex.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseSex)
-let heartDiseaseCp = createOclAttribute()
-heartDiseaseCp.name = "cp"
-heartDiseaseCp.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseCp)
-let heartDiseaseTrestbps = createOclAttribute()
-heartDiseaseTrestbps.name = "trestbps"
-heartDiseaseTrestbps.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseTrestbps)
-let heartDiseaseChol = createOclAttribute()
-heartDiseaseChol.name = "chol"
-heartDiseaseChol.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseChol)
-let heartDiseaseFbs = createOclAttribute()
-heartDiseaseFbs.name = "fbs"
-heartDiseaseFbs.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseFbs)
-let heartDiseaseRestecg = createOclAttribute()
-heartDiseaseRestecg.name = "restecg"
-heartDiseaseRestecg.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseRestecg)
-let heartDiseaseThalach = createOclAttribute()
-heartDiseaseThalach.name = "thalach"
-heartDiseaseThalach.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseThalach)
-let heartDiseaseExang = createOclAttribute()
-heartDiseaseExang.name = "exang"
-heartDiseaseExang.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseExang)
-let heartDiseaseOldpeak = createOclAttribute()
-heartDiseaseOldpeak.name = "oldpeak"
-heartDiseaseOldpeak.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseOldpeak)
-let heartDiseaseSlope = createOclAttribute()
-heartDiseaseSlope.name = "slope"
-heartDiseaseSlope.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseSlope)
-let heartDiseaseCa = createOclAttribute()
-heartDiseaseCa.name = "ca"
-heartDiseaseCa.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseCa)
-let heartDiseaseThal = createOclAttribute()
-heartDiseaseThal.name = "thal"
-heartDiseaseThal.type = intOclType
-heartDiseaseOclType.attributes.append(heartDiseaseThal)
-let heartDiseaseOutcome = createOclAttribute()
-heartDiseaseOutcome.name = "outcome"
-heartDiseaseOutcome.type = stringOclType
-heartDiseaseOclType.attributes.append(heartDiseaseOutcome)
-}
 
 func instanceFromJSON(typeName: String, json: String) -> AnyObject?
 { let jdata = json.data(using: .utf8)!
@@ -130,8 +36,7 @@ class HeartDiseaseViewModel : ObservableObject {
     static func getInstance() -> HeartDiseaseViewModel {
     if instance == nil
     { instance = HeartDiseaseViewModel()
-    initialiseOclFile()
-    initialiseOclType() }
+     }
     return instance! }
             
     init() {
